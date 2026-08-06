@@ -1,0 +1,98 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #ffffff;
+  border: 1px solid #d9e4eb;
+  border-radius: 24px;
+  box-shadow: 0 18px 42px rgba(30, 64, 88, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo span {
+  font-size: 2rem;
+}
+
+.logo h2 {
+  color: #1f3345;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #3a8ea0;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+  cursor: pointer;
+}
+
+.login-btn {
+  border: 1px solid #7ca7b5;
+  background: transparent;
+  color: #2f4d5a;
+}
+
+.signup-btn {
+  border: none;
+  background: #3a99ad;
+  color: #ffffff;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(58, 153, 173, 0.16);
+}
+
+.login-btn:hover {
+  background: rgba(122, 166, 182, 0.12);
+}
+
+.signup-btn:hover {
+  background: #338b9f;
+}
+
+@media (max-width: 860px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
