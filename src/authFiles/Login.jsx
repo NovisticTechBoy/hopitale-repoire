@@ -9,14 +9,14 @@ function LoginPage() {
         <h2 className="authHeading">Login to your MedConnect Account</h2>
         <p className="authSubtext">Welcome back. Sign in to continue your care journey.</p>
 
-        <div className="googleSignUp">
+        <div className="googleLogIn">
           <button className="withGoogle">
             <Globe size={18} />
             <span>Continue with Google</span>
           </button>
         </div>
 
-        <div className="facebookSignUp">
+        <div className="facebookLogIn">
           <button className="facebookButton">
             <BadgeCheck size={18} />
             <span>Continue with Facebook</span>
@@ -24,7 +24,7 @@ function LoginPage() {
         </div>
 
         <div className="authDivider">
-          <span>or</span>
+          <span>OR</span>
         </div>
 
         <form className="authForm">
@@ -37,7 +37,7 @@ function LoginPage() {
           <label htmlFor="user-password" className="authLabel">Password</label>
           <div className="inputWrap">
             <Lock className="inputIcon" size={18} />
-            <input id="user-password" className="authInput" placeholder="Type your password here.." type="password" />
+            <input id="user-password" className="authInput" placeholder="********" type="password" />
           </div>
         </form>
 
