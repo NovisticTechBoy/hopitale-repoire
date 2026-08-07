@@ -1,0 +1,163 @@
+.authPage {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: linear-gradient(135deg, #f6fbff 0%, #eef6ff 100%);
+    font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.authDiv {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    border: 1px solid #e5efff;
+    border-radius: 20px;
+    box-shadow: 0 14px 40px rgba(15, 60, 120, 0.08);
+    padding: 32px 28px;
+}
+
+.authHeading {
+    margin: 0 0 8px;
+    font-size: 1.7rem;
+    color: #163b63;
+    font-weight: 700;
+}
+
+.authSubtext {
+    margin: 0 0 22px;
+    color: #5b6f86;
+    font-size: 0.95rem;
+}
+
+.googleSignUp,
+.facebookSignUp {
+    margin-bottom: 12px;
+}
+
+.withGoogle,
+.facebookButton,
+.loginButton {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.withGoogle,
+.facebookButton {
+    background: #f7faff;
+    color: #224a72;
+    border: 1px solid #dfe9f8;
+}
+
+.withGoogle:hover,
+.facebookButton:hover,
+.loginButton:hover {
+    transform: translateY(-1px);
+}
+
+.authDivider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #7b8ca6;
+    font-size: 0.9rem;
+}
+
+.authDivider::before,
+.authDivider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e4ebf5;
+}
+
+.authDivider::before {
+    margin-right: 10px;
+}
+
+.authDivider::after {
+    margin-left: 10px;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.authLabel {
+    font-size: 0.9rem;
+    color: #35506f;
+    font-weight: 600;
+}
+
+.inputWrap {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7b8ca6;
+}
+
+.authInput {
+    width: 100%;
+    padding: 12px 14px 12px 42px;
+    border: 1px solid #dfe8f4;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    background: #fcfeff;
+    box-sizing: border-box;
+}
+
+.authInput:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.14);
+}
+
+.forgotPassword {
+    margin: 10px 0 16px;
+    text-align: right;
+    color: #4a90e2;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.loginButton {
+    background: linear-gradient(135deg, #3d8cff 0%, #2b6fe6 100%);
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(43, 111, 230, 0.2);
+    margin-bottom: 14px;
+}
+
+.authSwitch {
+    text-align: center;
+    color: #66738a;
+    font-size: 0.95rem;
+}
+
+.authLink {
+    color: #2b6fe6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.authLink:hover {
+    text-decoration: underline;
+}

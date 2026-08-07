@@ -1,11 +1,13 @@
 import React from 'react';
 import './Home-Styles.css';
+import { Link } from 'react-router';
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import DoctorImage1 from '../assets/doctor.jpg';
 import { Search, BookOpenCheck, MousePointer, CircleChevronRight } from "lucide-react";
 
 function Home(){
+
     return(
         <>
         <div>
@@ -141,7 +143,7 @@ function Home(){
       <section className="cta">
         <h2>Ready to take charge of your health?</h2>
 
-        <button>Get Started</button>
+        <Link to="/login"><button>Get Started</button></Link>
       </section>
 
 
