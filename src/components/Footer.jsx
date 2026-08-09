@@ -2,54 +2,44 @@ import { Link } from "react-router";
 import './Footer.css';
 
 function Footer() {
-    return (
-        <div>
-         
-             <footer className="footer">
+  return (
+    <footer className="footer">
       <div className="footer-container">
-
         <div className="footer-section">
           <h2>🩺 MedConnect</h2>
           <p>
-            Connecting patients with trusted healthcare
-            professionals anytime, anywhere.
+            Connecting patients with trusted healthcare professionals anytime, anywhere.
           </p>
         </div>
 
         <div className="footer-section">
           <h3>Quick Links</h3>
-
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/appointments">My Appointments</Link>
         </div>
 
         <div className="footer-section">
           <h3>Services</h3>
-
-          <a href="/doctors">Find Doctors</a>
-          <a href="/appointments">Appointments</a>
-          <a href="/emergency">Emergency Care</a>
+          <a href="/#doctors">Find Doctors</a>
+          <Link to="/appointments">Book Consultations</Link>
+          <Link to="/signup">Create Account</Link>
         </div>
 
         <div className="footer-section">
-          <h3>Contact</h3>
-
-          <p>+234 XXX XXX XXXX</p>
-          <p>medconnect@gmail.com</p>
-          <p>Ibadan, Nigeria</p>
+          <h3>Contact Us</h3>
+          <p>📞 +234 800 MEDCONNECT</p>
+          <p>✉️ support@medconnect.health</p>
+          <p>📍 Healthcare HQ, Ibadan, Nigeria</p>
         </div>
-
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 MedConnect. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} MedConnect. All rights reserved.</p>
       </div>
     </footer>
-
-        </div>
-    );
+  );
 }
-
 
 export default Footer;
