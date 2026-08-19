@@ -5,7 +5,16 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import DoctorImage1 from '../assets/doctor.jpg';
 import { Search, BookOpenCheck, MousePointer, CircleChevronRight, CheckCircle2, X } from "lucide-react";
-import { supabase } from '../supabaseClient';
+import { supabase, isSupabaseConfigured } from '../supabaseClient';
+
+const DEFAULT_DOCTORS = [
+  { id: '1', name: 'Dr. Sarah Williams', specialty: 'Cardiologist', rating: 4.90 },
+  { id: '2', name: 'Dr. James Brown', specialty: 'Dentist', rating: 4.80 },
+  { id: '3', name: 'Dr. Grace Adams', specialty: 'Neurologist', rating: 4.70 },
+  { id: '4', name: 'Dr. Michael Chen', specialty: 'Pediatrician', rating: 4.95 },
+  { id: '5', name: 'Dr. Emily Taylor', specialty: 'Ophthalmologist', rating: 4.85 },
+  { id: '6', name: 'Dr. David Martinez', specialty: 'Orthopedic', rating: 4.75 },
+];
 
 function Home() {
   const navigate = useNavigate();
@@ -24,12 +33,19 @@ function Home() {
   }, []);
 
   const fetchDoctors = async () => {
+    if (!isSupabaseConfigured) {
+      setDoctors(DEFAULT_DOCTORS);
+      setLoading(false);
+      return;
+    }
+
     try {
       const { data, error } = await supabase.from('doctors').select('*');
       if (error) throw error;
-      setDoctors(data || []);
+      setDoctors(data && data.length > 0 ? data : DEFAULT_DOCTORS);
     } catch (err) {
       console.error('Error fetching doctors:', err);
+      setDoctors(DEFAULT_DOCTORS);
     } finally {
       setLoading(false);
     }
