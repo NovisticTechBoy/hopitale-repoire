@@ -114,7 +114,7 @@ function Home() {
           <div className="hero-text">
             <h1>Healthcare, on your schedule.</h1>
             <p>
-              Find trusted doctors and healthcare professionals, compare reviews, and book appointments in minutes.
+              MedConnect helps people find trusted doctors, learn about common health conditions, and access useful health information before or alongside booking care.
             </p>
 
             <div className="hero-buttons">
@@ -297,30 +297,30 @@ function Home() {
           <div className="steps">
             <div className="step">
               <h3>
-                1. Search <Search size={20} />
+                1. Learn <Search size={20} />
               </h3>
-              <p>Find doctors and specialists.</p>
+              <p>Explore trusted health information and common issues before seeking care.</p>
             </div>
 
             <div className="step">
               <h3>
-                2. Choose <MousePointer size={20} />
+                2. Search <MousePointer size={20} />
               </h3>
-              <p>Read reviews and select who suits your problem.</p>
+              <p>Find doctors, specialists, and care options that match your needs.</p>
             </div>
 
             <div className="step">
               <h3>
                 3. Book <BookOpenCheck size={20} />
               </h3>
-              <p>Select a convenient time for your appointment.</p>
+              <p>Select a convenient time for your appointment or consultation.</p>
             </div>
 
             <div className="step">
               <h3>
-                4. Meet <CircleChevronRight size={20} />
+                4. Stay informed <CircleChevronRight size={20} />
               </h3>
-              <p>YOU choose whether to Attend physically or online.</p>
+              <p>Use practical health education to make better decisions and support your wellbeing.</p>
             </div>
           </div>
         </section>
@@ -330,8 +330,8 @@ function Home() {
 
           <ul>
             <li>✔ Verified professionals</li>
-            <li>✔ Fast booking</li>
-            <li>✔ Secure records</li>
+            <li>✔ Comprehensive health information</li>
+            <li>✔ Personalized care recommendations</li>
             <li>✔ Appointment reminders</li>
             <li>✔ Online consultations</li>
           </ul>

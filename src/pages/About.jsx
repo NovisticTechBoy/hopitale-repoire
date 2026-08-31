@@ -12,7 +12,7 @@ function About() {
             About MedConnect
           </h1>
           <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto', lineHeight: '1.8' }}>
-            MedConnect is dedicated to transforming healthcare access by connecting patients with certified, experienced medical specialists whenever they need care.
+            MedConnect is dedicated to improving healthcare access by combining trusted specialist connections with practical, public health education. We help people understand common health issues, find the right kind of care, and make informed decisions about their wellbeing.
           </p>
         </div>
 
@@ -21,15 +21,15 @@ function About() {
             <ShieldCheck size={36} color="var(--accent-color)" style={{ marginBottom: '16px' }} />
             <h3 style={{ marginBottom: '10px', color: 'var(--text-primary)' }}>Verified Professionals</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
-              Every healthcare provider on MedConnect is thoroughly vetted and credentialed.
+              Every healthcare provider on MedConnect is thoroughly vetted and credentialed, while our informational content is designed to help people better understand their health conditions.
             </p>
           </div>
 
           <div style={{ padding: '28px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '20px', boxShadow: '0 16px 40px var(--shadow-color)' }}>
             <HeartPulse size={36} color="var(--accent-color)" style={{ marginBottom: '16px' }} />
-            <h3 style={{ marginBottom: '10px', color: 'var(--text-primary)' }}>Patient-First Care</h3>
+            <h3 style={{ marginBottom: '10px', color: 'var(--text-primary)' }}>Health Education</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
-              We prioritize convenient appointment scheduling, privacy, and seamless communication.
+              MedConnect provides practical guidance on common illnesses, symptoms, prevention, and when to seek medical help, so the public is better informed about their health.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ function About() {
             <Award size={36} color="var(--accent-color)" style={{ marginBottom: '16px' }} />
             <h3 style={{ marginBottom: '10px', color: 'var(--text-primary)' }}>Top Rated Quality</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
-              Read authentic reviews and ratings from real patients to choose the right specialist.
+              Read authentic reviews and quality information that helps patients choose care wisely, while also understanding the health issue behind their symptoms.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ function About() {
             <Users size={36} color="var(--accent-color)" style={{ marginBottom: '16px' }} />
             <h3 style={{ marginBottom: '10px', color: 'var(--text-primary)' }}>Global Accessibility</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
-              Book in-person visits or telemedicine consultations from anywhere in Nigeria and beyond.
+              Patients can book care and explore health information from anywhere, empowering healthier decisions before and during treatment.
             </p>
           </div>
         </div>

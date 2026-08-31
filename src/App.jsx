@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
+import Docs from './pages/Docs.jsx';
 import LoginPage from './authFiles/Login.jsx';
 import SignupPage from './authFiles/Signup.jsx';
 import MyAppointments from './pages/MyAppointments.jsx';
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/docs" element={<Docs/>} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/appointments" element={<MyAppointments />} />

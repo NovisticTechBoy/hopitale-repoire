@@ -43,6 +43,7 @@ function Navbar() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/docs">Docs</Link></li>
         {user && <li><Link to="/appointments">My Appointments</Link></li>}
       </ul>
 

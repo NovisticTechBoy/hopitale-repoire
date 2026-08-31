@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-section">
           <h2>🩺 MedConnect</h2>
           <p>
-            Connecting patients with trusted healthcare professionals anytime, anywhere.
+            A trusted health platform that connects people with care and shares valuable health information to help the public stay informed and proactive.
           </p>
         </div>
 
