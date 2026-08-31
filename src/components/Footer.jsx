@@ -17,6 +17,7 @@ function Footer() {
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
+          <Link to="/docs">Docs</Link>
           <Link to="/appointments">My Appointments</Link>
         </div>
 
